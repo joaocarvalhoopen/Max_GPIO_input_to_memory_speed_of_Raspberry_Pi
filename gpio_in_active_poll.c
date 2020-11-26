@@ -23,9 +23,9 @@
 // Remember that in the RPI there is BUS memory, physical memory
 // and Virtual memory addressing spaces.
 // Location of peripheral registers in physical memory.
-//#define GPIO_BASE  (0x20000000 + 0x200000) // Pi Zero or 1
-#define GPIO_BASE    (0x3F000000 + 0x200000) // Pi 2 or 3
-//#define GPIO_BASE  (0xFE000000 + 0x200000)  // Pi 4
+//#define GPIO_BASE  (0x20000000 + 0x200000)  /* Pi Zero or 1 */
+#define GPIO_BASE    (0x3F000000 + 0x200000)  /* Pi 2 or 3    */
+//#define GPIO_BASE  (0xFE000000 + 0x200000)  /* Pi 4         */
 
 #define GPLVL0       0x34    // GPIO low set pins Input register.
 

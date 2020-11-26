@@ -13,9 +13,9 @@ The original file can be found on the authors github account in [github derekmol
 // Remember that in the RPI there is BUS memory, physical memory
 // and Virtual memory addressing spaces.
 // Location of peripheral registers in physical memory.
-//#define GPIO_BASE  0x20000000  // Pi Zero or 1
-#define GPIO_BASE    0x3F000000  // Pi 2 or 3
-//#define GPIO_BASE  0xFE000000  // Pi 4
+//#define GPIO_BASE  (0x20000000 + 0x200000)  /* Pi Zero or 1 */
+#define GPIO_BASE    (0x3F000000 + 0x200000)  /* Pi 2 or 3    */
+//#define GPIO_BASE  (0xFE000000 + 0x200000)  /* Pi 4         */
 
 ```
 
